@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+<title>Gamfs</title>
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+<!--[if lte IE 8]>  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">  
+	<!--<![endif]-->
+
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/marketing.css">
+    <!--<![endif]-->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="./js/mapApi.js"> </script>
+    
+</head>
+<body bgcolor="#000000" onload="initialize();">
+	<div class="header" >
+	    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+	        <img class='bi' src="./img/top_bi.gif">
+	        <ul class="pure-menu-list">
+	            <li class="pure-menu-item"><a href="#joinUs" class="pure-menu-link">JOIN US</a></li>
+	            <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">CONTACT</a></li>
+	        </ul>
+	    </div>
+	</div>
+	
+	<div class="container">
+		<!-- 첫번째 위치 -->
+		<img class='contentImg1' src="./img/image_01.gif">
+		<a name="joinUs"></a> 
+		<div class='subscript1'>
+	    	<p class="infoTitle">GAMFS</p>
+	    	<p class="infoSubscript">
+	    		겜프스는 국내 및 인도네시아의 온라인 대전액션게임 1위 로스트사가와 서바이벌프로젝트의 핵심 개발진이 독립 후 설립한 전문 게임 개발사로,<br> 
+	    		국내 최고 수준의 실시간 대전 게임 노하우를 보유하고 있습니다.
+	    	</p>
+	    	
+	    	<p class="infoTitle">Project K</p>
+	    	<p class="infoSubscript">
+	    		10년 이상의 개발 노하우를 바탕으로, 겜프스만의 차별화된 전략 시뮬레이션 게임 `<b>Project K</b>`를 개발하고 있습니다. <br>
+	    		<b>Project K</b>는 2016년 하반기 출시를 목표로 개발중입니다. 
+	    	</p>
+    	</div>
+    	<!-- 두번째 위치 -->
+    	<img class='contentImg2' src="./img/image_02.gif">
+    	<a name="contact"></a>
+    	<div class='subscript2'>
+	    	<p class="bigTitle">JOIN US</p>
+	    	<p class="middleTitle">최고의 복지는 정시 출근, 정시 퇴근입니다.</p>
+	    	<p class="infoSubscript"> 
+				겜프스는 <b>Professional</b> 집단 입니다. <br>
+	    		자신의 분야에서 최고가 누구인지 또 자신의 위치는 어느 정도인지를 정확히 알고, 어제보다 오늘 발전하는 사람을 원합니다. <br>
+	    		효율적인 업무 시간 관리가 가능한 사람을 원합니다. 즉 책상에 앉아있는 시간보다 업무의 밀도가 높은 사람을 원합니다. <br>
+	    		야근은 지양합니다.
+	    	</p>
+    	</div>
+    	<!-- 세번째 위치 -->
+    	<img class='contentImg3' src="./img/image_02.gif">
+    	<div class='subscript3'>
+	    	<p class="bigTitle subscriptAlignLeft">CONTACT</p>
+	    	
+	    	<div id="mapView" class="mapView"></div>
+	    	
+	    	<br>
+	    	<br>
+	    	<br>
+	    	<p class="infoSubscript clear fixedInfo">
+				FAX 070-8677-9590 <br>
+				E-mail sweed@gamfs.net <br>
+				주소 경기 성남시 분당구 삼평동 629 네오위즈 판교타워
+	    	</p>
+	    	
+    	</div>
+	</div>
+	
+	<div class='footer'>	
+		<p class='copyright'>Copyright <span class='copyrightPoint'>Gamfs Inc.</span> 2013 ALL Right Reserved</p>
+	</div>
+</body>
+</html>
