@@ -105,6 +105,7 @@ a.pure-button-primary {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu {
+	padding-bottom : 10px;
     background: #000000;
 }
 .pure-menu.pure-menu-fixed {
@@ -289,6 +290,11 @@ b {
     top: 250px; left: 0; bottom: 0; right: 0;
     text-align: left;
     text-transform: uppercase;
+}
+
+.infoSubscript {
+	line-height: 24px;
+
 }
 
 
