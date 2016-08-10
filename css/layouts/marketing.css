@@ -172,10 +172,8 @@ b {
 
 
 .infoTitle {
-	font-family:Papyrus;
 	font-size:18px;
 	margin-bottom:-10px;
-	font-weight:bolder;
 	letter-spacing:-1px;
 }
 
@@ -184,7 +182,6 @@ b {
 	margin-bottom:-10px;
 	letter-spacing:-1px;
 	line-height:60px;
-	#font-weight: 400;
 }
 
 .middleTitle {
@@ -192,7 +189,6 @@ b {
 	margin-bottom:-10px;
 	letter-spacing:-1px;
 	line-height: 40px;
-	font-weight: bolder;
 }
 
 .subscript1 {
@@ -254,16 +250,11 @@ b {
 }
 
 .mapView {
-	position: relative;
-	float: right;
-	vertical-align: middle;
-	right: 18%;
-	#z-index : 10;
-	width:510px;
-	height:290px;
-	#bottom:75px;
-	#right:350px;
-	top:40px;
+	position: absolute;
+	left: 465px;
+	width:864px;
+	height:320px;
+	top : 45px;
 }
 
 
@@ -302,13 +293,11 @@ b {
 
 
 .splash .infoSubscript {
-    font-weight:bold;
 }
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
     font-size: 20px;
-    font-weight: bold;
     #color: white;
     #border: 3px solid white;
     #padding: 1em 1.6em;
@@ -366,154 +355,3 @@ b {
     color: #aaa;
 }
 
-
-
-/*
- * -- TABLET (AND UP) MEDIA QUERIES --
- * On tablets and other medium-sized devices, we want to customize some
- * of the mobile styles.
- */
-@media (max-width:1280px) {
-	.container {
-		padding-left:0%;
-		padding-right:0%;
-	}
-	
-	.fixedInfo {
-		width: 200px;
-	    margin-top: 60px;
-	}
-	
-	.mapView {
-		float:right;
-		width:450px;
-		height:280px;
-		margin-left:20%;
-	}
-
-
-}
-
-@media (max-width:825px){
-	.container {
-		padding-left:0%;
-		padding-right:0%;
-	}
-	
-	.bi {
-		margin-left:-30px;
-	}
-	
-	.subscript1, .subscript2, .subscript3 {
-		margin-left:2%;
-		padding-left:0%;
-		padding-right:0%;
-	}	
-	.subscript1 {
-		top:150px;
-	}
-	
-	.clear {
-		bottom:250px;
-		float:left;
-	}
-	
-	.subscript3 {
-		font-size: 14px;
-	}
-	
-	
-	.contentImg3 {
-		height: 480px;
-	}
-	
-	.mapView {
-		float:left;
-		width: 340px;
-		height: 230px;
-		margin-left:20%;
-	}
-	
-	.fixedInfo {
-		width: 350px;
-	    margin-top: 50px;
-	}
-	
-	
-}
-
-
-
-@media (min-width: 48em) {
-
-    /* We increase the body font size */
-    body {
-        font-size: 17px;
-    }
-    
-    .infoSubscript {
-    	font-size: 15px;
-    	line-height:24px;
-    	font-weight:bold;
-    	letter-spacing: -1px;
-    }
-    
-    .subscriptAlignLeft {
-    	display: inline-block;
-    	float:left;
-    }
-    
-    .clear {
-    	float:clear;
-    }
-    
-    
-    /* We want to give the content area some more padding */
-    .content {
-        padding: 1em;
-    }
-
-    /* We can align the menu header to the left, but float the
-    menu items to the right. */
-    .home-menu {
-        text-align: left;
-    }
-        .home-menu ul {
-            float: right;
-        }
-
-    /* We increase the height of the splash-container */
-/*    .splash-container {
-        height: 500px;
-    }*/
-
-    /* We decrease the width of the .splash, since we have more width
-    to work with */
-    .splash {
-        width: 50%;
-        height: 50%;
-    }
-
-    .splash-head {
-        font-size: 100%;
-    }
-
-
-    /* We remove the border-separator assigned to .l-box-lrg */
-    .l-box-lrg {
-        border: none;
-    }
-
-}
-
-/*
- * -- DESKTOP (AND UP) MEDIA QUERIES --
- * On desktops and other large devices, we want to over-ride some
- * of the mobile and tablet styles.
- */
-@media (min-width: 78em) {
-    /* We increase the header font size even more */
-    .splash-head {
-        font-size: 250%;
-    }
-}
