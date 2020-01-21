@@ -42,3 +42,11 @@ function initialize() {
 				infowindow.open(map, marker);
 			});
 		}
+		
+
+function testcommitcheck() {
+		console.info("test");
+		/// testcode
+	}
+		
+		
