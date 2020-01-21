@@ -41,15 +41,4 @@ function initialize() {
 			google.maps.event.addListener(marker, 'click', function() {
 				infowindow.open(map, marker);
 			});
-		}
-		
-
-function testcommitcheck() {
-		
-		/// testcode
-
-		const data = "test"
-		console.info(data);
-	}
-		
-		
+		}		
